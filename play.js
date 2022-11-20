@@ -1,14 +1,29 @@
+
+const fetchData = (callback) => {
+    setTimeout(() => {
+        callback('Done!');
+    }, 1000);
+};
+
+const data = () => {
+    setTimeout(() => {
+        console.log('Time is done!');
+        fetchData(text => {
+            console.log(text);
+        });
+    }, 1000);
+};
+
+console.log('Log once')
+data();
+
 const person = {
     name: "Aravinth",
     age: 20,
-    getPerson() {
+    getPerson: function () {
         console.log("Hi this is " + this.name);
     }
 }
-const hobbies = ["Sports", "Swimming"];
-const newHobbies = [...hobbies];
-const toArray = (...args) => {
-    return args;
-}
 
-console.log(toArray(1, 2, 3, 4, 5));
+const { name, age } = person;
+
