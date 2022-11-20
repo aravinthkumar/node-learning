@@ -6,4 +6,6 @@ const person = {
     }
 }
 
-person.getPerson();
+const hobbies = ["Sports", "Swimming"];
+console.log(hobbies);
+console.log(hobbies.map(hobby => "Hobby:" + hobby));
