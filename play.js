@@ -5,7 +5,6 @@ const person = {
         console.log("Hi this is " + this.name);
     }
 }
-
 const hobbies = ["Sports", "Swimming"];
+hobbies.push('Basketball');
 console.log(hobbies);
-console.log(hobbies.map(hobby => "Hobby:" + hobby));
