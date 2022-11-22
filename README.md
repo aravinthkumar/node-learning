@@ -10,4 +10,10 @@ For Learning Node programming language
 - Created a html form to receive user for creation in `/` endpoint.
 - Once the entry is entered it calls the `/create-user` and logs the out put in console.
 
-`node app.js` to run the project.
+To run the project follow the steps.
+
+- Install the dependencies `npm install`
+- `npm start` to run the server
+
+> [`nodemon`](https://www.npmjs.com/package/nodemon) is added for detecting the any changes to files and restarting the server.
+
