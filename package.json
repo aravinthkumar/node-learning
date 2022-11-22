@@ -1,0 +1,24 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "To get node.js learning rolling",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "start-server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aravinthkumar/node-learning.git"
+  },
+  "author": "Aravinth Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aravinthkumar/node-learning/issues"
+  },
+  "homepage": "https://github.com/aravinthkumar/node-learning#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

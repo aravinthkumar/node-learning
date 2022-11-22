@@ -1,5 +1,5 @@
 const requestHandler = (req, res) => {
-    console.log('Entering request handler');
+    console.log('Entering request handler to serve the requests');
     if (req.url == "/") {
         console.log('Entered / end-point');
         res.setHeader("Content-type", "text/html");
