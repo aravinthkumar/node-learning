@@ -1,16 +1,17 @@
 const express = require('express');
 
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
 const app = express();
 
-app.use('/users', (req, res, next) => {
-    console.log('Entering middleware!!');
-    res.send('<h1>You reached users end-point</h1>')
-});
+app.use(adminRoutes);
+app.use(shopRoutes);
 
 app.use('/', (req, res, next) => {
-    console.log('Entering another middleware!!');
-    res.send('<h1>Hello from Express.js</h1>')
-});
+    console.log("/ end-point is reached");
+    res.send('<h1> Hello you are in the root </h1>')
+})
 
 console.log("Server is starting");
 app.listen(3000);
