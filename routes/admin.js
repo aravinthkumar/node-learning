@@ -9,8 +9,8 @@ router.get('/add-products', (req, res, next) => {
 
 router.post('/products', (req, res, next) => {
     console.log('Get products!');
-    res.redirect('/')
-
+    console.log(req.body);
+    res.redirect('/add-products');
 });
 
 module.exports = router;
