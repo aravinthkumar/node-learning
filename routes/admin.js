@@ -3,6 +3,7 @@ const path = require('path');
 const router = express.Router();
 const rootDir = require('../util/path');
 
+
 router.get('/admin/add-product', (req, res, next) => {
     console.log('Creating products!!');
     res.sendFile(path.join(rootDir, 'views', 'add-product.html'))
