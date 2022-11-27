@@ -1,10 +1,9 @@
 # Node World - For Learning
 
-
 Document on the Learning is placed in the following documentation github
 https://github.com/aravinthkumar/Documentation/blob/main/Technologies/NodeJs/complete-guide.md
 
-## Completed the first assignment
+## First assignment (Completed)
 > Present in branch [firstAssignment](https://github.com/aravinthkumar/node-world/tree/firstAssignment)
 
 - Created a server running on port 3000 `server.js` file
@@ -15,13 +14,13 @@ https://github.com/aravinthkumar/Documentation/blob/main/Technologies/NodeJs/com
 - Once the entry is entered it calls the `/create-user` and logs the out put in console.
 
 
-## Completed the second assignment 
+## Second assignment (Completed)
 > Present in branch [secondAssignment](https://github.com/aravinthkumar/node-world/tree/secondAssignment)
 
 - Create end-points `/` and `/user` which sends a html file as a response, present in view folder `user.htm` and `welcome.html`
 - it also serves static files `css` present in public folder.
 
-## Completed the third assignment 
+## Third assignment (Completed) 
 > Present in branch [thirdAssignment](https://github.com/aravinthkumar/node-world/tree/thirdAssignment)
 
 - `/` and `/user` end-points render the template engine (ejs) with res.render(), 
