@@ -21,6 +21,21 @@ https://github.com/aravinthkumar/Documentation/blob/main/Technologies/NodeJs/com
 - Create end-points `/` and `/user` which sends a html file as a response, present in view folder `user.htm` and `welcome.html`
 - it also serves static files `css` present in public folder.
 
+## Completed the third assignment 
+> Present in branch [thirdAssignment](https://github.com/aravinthkumar/node-world/tree/thirdAssignment)
+
+- `/` and `/user` end-points render the template engine (ejs) with res.render(), 
+  - `/` points to `welcome.ejs` file and `/user` points to `user.ejs` file.
+- `ejs` files are stored in `views` folder where html was previously present.
+- `/user` has http `get` and `post` methods implemented
+   - `post` method adds the title value send by the form to user[] array.
+- `/` has the http `get` implemented and read the `user[]` and loops inside the `welcome.ejs` file to dynamically to render the users list.
+
+Also have implemented includes for reuse purpose
+- `views/includes/head.ejs`
+- `views/includes/navigation.ejs`
+- `views/includes/end.ejs`
+
 
 ## To run the application
 
