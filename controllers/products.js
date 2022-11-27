@@ -1,5 +1,5 @@
 
-const Product = require('../model/product');
+const Product = require('../models/product');
 
 exports.getAddProduct = (req, res, next) => {
     console.log('Creating products!!');
