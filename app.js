@@ -6,16 +6,27 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+const users = [];
+
+app.post('/user', (req, res, next) => {
+    console.log("/user post is reached")
+    users.push({ title: req.body.title });
+    console.log(users);
+    res.redirect('/');
+})
 
 app.get('/user', (req, res, next) => {
-    console.log("/user is reached")
-    res.sendFile(path.join(__dirname, 'views', 'user.html'))
+    console.log("/user get is reached")
+    console.log(users);
+    res.render('user', { pageTitle: 'Add User', path: '/user' });
 })
 
 
 app.use('/', (req, res, next) => {
     console.log("/ end-point is reached");
-    res.sendFile(path.join(__dirname, 'views', 'welcome.html'));
+    res.render('welcome', { pageTitle: 'Welcome users', user: users, path: '/' });
 })
 
 
